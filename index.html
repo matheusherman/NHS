@@ -1,0 +1,262 @@
+<head>
+  <title>Formulário de inspeção e teste final</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <meta charset="utf-8" content="width=device-width, initial-scale=1.0"/>
+  <link href="ContatoEstilo.css" rel="stylesheet" type="text/css" media="print"/>                          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet"   href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>                                        <!--   <link href="ContatoEstilo.css" rel="stylesheet" media="all" /> -->                                                                                                               <script src="JavaScript1.js"></script>
+<META NAME="GENERATOR" CONTENT="Mozilla/3.0b5aGold (Win16; I) [Netscape]">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META name="title"content="Add or Subtract Number of Days to a Date Calculations">
+<META name="keywords" content="calendar, countdown, day, count, counter, online calculators, calculation, dynamic">
+<META name="description" content="Add or Subtract Number of Days to a Date Calculations - online calculators">
+</head>
+<body onLoad=”document.frmform.nome.focus();“>
+<div style="overflow-x: hidden;">
+  <form name="ThisForm">
+ <div>
+<table style="width:100%">
+<tr>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+<td><img src="https://www.nhs.com.br/wp-content/uploads/2020/09/logo_nhs_tagline_azul_450x450px.png" alt="NHS Sistemas De Energia" height="60" width="60"></td>
+ <td><h1>FORMULÁRIO DE INSPEÇÃO E TESTE FINAL</h1></td>
+</tr>
+</table>
+   </div>
+<hr size=1>
+
+<div>
+<p class="tecnico">
+  <label class="resp">Resp. Técnico: </label>
+  <input type="text" id="tecnico" name="tecnico" size="50" required>
+</p>  
+
+<p class="num_serie">
+  <label class="num">Cod./Núm. de Série: </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+
+<p class="tipo">
+  <label class="form">Tipo de Formulário: </label>
+  <select name="tipo" required>
+    <option value="">
+    <option>FR.0438 R.03
+    <option>FR0588 R.03</option></select>
+</p>
+
+ <p class=Data>
+        <label class="hora">Data: </label>
+                           <script lang=JavaScript>
+                           var mydate=new Date()
+                           var year=mydate.getYear()
+                           if (year < 1000)
+                             year+=1900
+                           var day=mydate.getDay()
+                           var month=mydate.getMonth()
+                           var daym=mydate.getDate()
+                           if (daym<10)
+                           daym="0"+daym
+                                   var dayarray=new Array("Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado")
+                          var montharray=new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro")
+document.write("<small><font color='000000' face='sans-serif' size='2'>"+dayarray[day]+", "+daym+" de "+montharray[month]+" de "+year+"</font></small>")
+</script>
+</br>
+</p>
+</div>
+
+<hr size=1>
+<div>
+<h2>INSPEÇÃO MECÂNICA</h2>
+  <label class=inspecmec>Exitência de avarias no gabinete</label>
+  <input type="radio" name="1.1" value="sim"/> Sim
+<input type="radio" name="1.1" value="não"/> Não<br>
+  
+  <label class=inspecmec>Qualidade dos rodízios</label>
+  <input type="radio" name="1.2" value="sim"/> Sim
+<input type="radio" name="1.2" value="não"/> Não<br>
+  
+  <label class=inspecmec>Peças soltas no interior do gabinete</label>
+  <input type="radio" name="1.3" value="sim"/> Sim
+<input type="radio" name="1.3" value="não"/> Não<br>
+  
+  <label class=inspecmec>Qualidade dos botões liga/desliga, bypass, teclas de comando</label>
+  <input type="radio" name="1.4" value="sim"/> Sim
+<input type="radio" name="1.4" value="não"/> Não<br>
+  
+  <label class=inspecmec>Etiquetas, tampografia e painel</label>
+  <input type="radio" name="1.5" value="sim"/> Sim
+<input type="radio" name="1.5" value="não"/> Não<br>
+  
+<br>
+  <hr size=1>
+<div>
+  
+<h2>INSPEÇÃO DE CABOS E CONEXÕES</h2>
+  
+      <label class=inspecmec>Verificar aperto dos parafusos das conexões das placas, disjuntores e borneiras</label>
+  <input type="radio" name="2.1" value="sim"/> Sim
+<input type="radio" name="2.1" value="não"/> Não<br>
+  
+      <label class=inspecmec>Modelagem dos chicotes conforme EP</label>
+  <input type="radio" name="2.2" value="sim"/> Sim
+<input type="radio" name="2.2" value="não"/> Não<br>
+  
+      <label class=inspecmec>Qualidade das conexões faston (terminais travados)</label>
+  <input type="radio" name="2.3" value="sim"/> Sim
+<input type="radio" name="2.3" value="não"/> Não<br>
+  
+      <label class=inspecmec>Modelagem de todosos cabos flats</label>
+  <input type="radio" name="2.4" value="sim"/> Sim
+<input type="radio" name="2.4" value="não"/> Não<br>
+  
+      <label class=inspecmec>Solda dos cabos</label>
+  <input type="radio" name="2.5" value="sim"/> Sim
+<input type="radio" name="2.5" value="não"/> Não<br>
+  
+      <label class=inspecmec>Fios/chicotes prõximos aos ventiladores com risco de travamento</label>
+  <input type="radio" name="2.6" value="sim"/> Sim
+<input type="radio" name="2.6" value="não"/> Não<br>
+  
+      <label class=inspecmec>Polaridade e trava do engate rápido (se aplicável)</label>
+  <input type="radio" name="2.7" value="sim"/> Sim
+<input type="radio" name="2.7" value="não"/> Não<br>
+  
+      <label class=inspecmec>Ligação e conexão dos ventiladores/sensores/flets</label>
+  <input type="radio" name="2.8" value="sim"/> Sim
+<input type="radio" name="2.9" value="não"/> Não<br>
+  
+      <label class=inspecmec>Fixação da placa ALM_BAT no disjuntos (se aplicável)</label>
+  <input type="radio" name="2.10" value="sim"/> Sim
+<input type="radio" name="2.10" value="não"/> Não<br>
+  
+  
+  
+  
+</div>
+<br>
+  <hr size=1></hr>
+  </p>
+ <h2> <b>VERIFICAÇÃO DE PLACA E COMPONENTES</b> </h2>
+   </br>
+<div>
+    <label class=inspecmec>Fusíveis (bateria, barramento, AC e carregador)</label>
+  <input type="radio" name="3.1" value="sim"/> Sim
+<input type="radio" name="3.1" value="não"/> Não<br>
+      <label class=inspecmec>Disjuntores</label>
+  <input type="radio" name="3.2" value="sim"/> Sim
+<input type="radio" name="3.2" value="não"/> Não<br>
+      <label class=inspecmec>Verificar placas periféricas se não estão tortas (placa fonte, CPU, driver, etc.)</label>
+  <input type="radio" name="3.3" value="sim"/> Sim
+<input type="radio" name="3.3" value="não"/> Não<br>
+      <label class=inspecmec>Verificar se existem componentes tombados (componentes PTH)</label>
+  <input type="radio" name="3.4" value="sim"/> Sim
+<input type="radio" name="3.4" value="não"/> Não<br>
+<p class="num_serie">
+  <label class="num">Medir com múltimetro o valor da resistência equivalente do inrush do barramento:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+  </div>
+
+<hr size=1></hr>
+   <div>
+     <h2>ENSAIOS CONFORME PARÂMETROS DE TESTE</h2>
+     
+     <p class="num_serie">
+  <label class="num">Calibração Vout no inversor:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+    
+     <p class="num_serie">
+  <label class="num">Calibração Vout no display (se aplicável):  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+     
+     <p class="num_serie">
+  <label class="num">Largura Flybacks:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+     
+     <p class="num_serie">
+  <label class="num">Polaridade Flybacks:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+     
+     <p class="num_serie">
+  <label class="num">Tensão máxima no FET da fonte na partida e plena carga:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+     
+     <p class="num_serie">
+  <label class="num">+5V fonte principal:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+     
+     <p class="num_serie">
+  <label class="num">+12V fonte principal:  </label>
+  <input type="text" id="num" placeholder="" name="num" size="6" maxlength="7" required/>
+</p>
+  </div>
+</form>
+<div>
+
+  </div>
+</div>
+</body>
+</html>
+  <!--<table style="font-size: 13px" name="feriado">
+<th colspan="4" BGCOLOR="#dddddd"><b><u>Feriados 2018</u></b></th>
+  <tr>
+    <td BGCOLOR="#dddddd"><b>Data</b></td>
+    <td BGCOLOR="#dddddd"><b>Evento</b></td>
+    <td BGCOLOR="#dddddd"><b>Data</b></td>
+    <td BGCOLOR="#dddddd"><b>Evento</b></td>
+  </tr>
+  <tr>
+    <td>01/01</td>
+    <td>Ano Novo</td>
+    <td>31/05</td>
+    <td>Corpus Christi</td>
+  </tr>
+  <tr>
+    <td>13/02</td>
+    <td>Carnaval</td>
+    <td>07/09</td>
+    <td>Independência do Brasil</td>    
+  </tr>
+  <tr>
+    <td>30/03</td>
+    <td>Sexta-feira da Paixão</td>
+    <td>20/09</td>
+    <td>Revolução Farroupilha</td>    
+  </tr>
+  <tr>
+    <td>01/04</td>
+    <td>Páscoa</td>
+    <td>12/10</td>
+    <td>Nossa Senhora Aparecida</td>
+  </tr>
+  <tr>
+    <td>21/04</td>
+    <td>Tiradentes</td>
+    <td>02/11</td>
+    <td>Finados</td>
+  </tr>
+  <tr>
+    <td>01/05</td>
+    <td>Dia do Trabalhador</td>
+    <td>15/11</td>
+    <td>Proclamação da República</td>
+  </tr>
+  <tr>
+  	<td>10/05</td>
+    <td>Ascensão ao Senhor</td>
+    <td>25/12</td>
+    <td>Natal</td>
+  </tr>
+</td>  
+</tr>  
+</table> 

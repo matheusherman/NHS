@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+form {
+  /* Apenas para centralizar o form na página */
+  margin: auto;
+  width: 715px;
+  min-height: 100%;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 9pt;
+       
+}
+
+/*fieldset {
+  /* Para ver as bordas do formulário
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}*/
+
+input {
+
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 10pt;
+  border-bottom: 1.3px solid grey;
+  border-right: white;
+  border-left: white;
+  border-top: white;
+}
+
+label.resp {
+
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+    
+}
+
+label.num {
+
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+    
+}
+
+label.form {
+
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+    
+}
+
+label.hora {
+
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+    
+}
+
+label.inspecmec {
+
+  display: inline-block;
+  width: 600px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+    
+}
+/* Validação de campos */
+#tecnico:valid {background:#006600;color:#fff }
+#tecnico:invalid {background:#990000; color:#fff}
+#num:valid {background:#006600;color:#fff }
+#num:invalid {background:#990000; color:#fff}
+#tipo:valid {background:#006600;color:#fff }
+#tipo:invalid {background:#990000; color:#fff}
+
+input:hover, textarea:hover {
+
+  background: #dddddd;
+  
+}
+
+h1 {
+
+  text-align: center-left;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-weight: bold;
+
+}
+
+h2 {
+
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-weight: bold;
+
+}
+
+textarea {
+
+  width: 600px;
+  margin-left:20pt;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 10pt;
+  
+}
+
+select {
+  
+ font-family: sans-serif;
+ font-weight: normal;
+ font-size: 10pt;
+ border-bottom: 1.3px solid grey;
+ border-right: white;
+ border-left: white;
+ border-top: white;
+
+}
+
+.buttons {
+  
+  cursor: pointer;
+  
+}
